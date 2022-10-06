@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 9</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 9</title>
-    </head>
-
-    <body>
-        <p>
-            The size of this window is
-            <span id="width"></span>x<span id="height"></span>
-        </p>
-        <script>
-            // ???
-        </script>
-    </body>
-
+  <body>
+    <p>
+      The size of this window is
+      <span id="width"></span>x<span id="height"></span>
+    </p>
+    <script>
+      // ???
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      var x = document.querySelector("p");
+      x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+    </script>
+  </body>
 </html>
