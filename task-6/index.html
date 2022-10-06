@@ -15,13 +15,19 @@
     <button>Remove selected</button>
     <script>
       const remove = document.querySelector("button");
+      const select = document.querySelector(".colorSelect");
 
-      const options = document.querySelectorAll("option");
-      console.log(options);
+      //   const options = document.querySelectorAll("option");
+      //   console.log(options);
+
       remove.addEventListener("click", () => {
-        option.remove;
-        console.log("click");
-        console.log(options);
+        // select.value.remove();
+        // select.value.parentElement.remove();
+        select.selectedOptions[0].remove();
+        // console.log(select.value.remove());
+        // option.remove;
+        // console.log("click");
+        // console.log(options);
       });
       // ???
     </script>
