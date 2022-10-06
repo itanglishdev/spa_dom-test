@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 1</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 1</title>
-    </head>
+  <body>
+    <p id="text">Lorem ipsum...</p>
+    <button id="styler">Style</button>
 
-    <body>
-        <p id="text">Lorem ipsum...</p>
-        <button id="styler">Style</button>
+    <script>
+      // ???
+      const p = document.querySelector("#text");
+      const button = document.querySelector("#styler");
 
-        <script>
-            // ???
-        </script>
-    </body>
-
+      button.eventListener("click", () => {
+        p.style.color = "red";
+        p.style.fontFamily = "Arial";
+        p.style.fontSize = "Large";
+      });
+    </script>
+  </body>
 </html>
