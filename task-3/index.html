@@ -14,19 +14,29 @@
     </div>
 
     <script>
-      const firstInput = document.querySelector('input =[value="First input"]');
-      const secondInput = document.querySelector(
-        'input = [value="Second input"]'
-      );
+      const firstInput = document.querySelector('[value="First input"]');
+      const secondInput = document.querySelector('[value="Second input"]');
+      //   const input = document.querySelector("input");
 
       firstInput.addEventListener("focus", () => {
+        // secondInput.blur();
+        // firstInput.focus();
         firstInput.style.borderColor = "red";
+        secondInput.removeEventListener("focus", () => {
+          secondInput.style.borderColor = "none";
+        });
       });
+      //   input.blur();
 
       secondInput.addEventListener("focus", () => {
+        // firstInput.blur();
+        // secondInput.focus();
         secondInput.style.borderColor = "red";
+        firstInput.removeEventListener("focus", () => {
+          firstInput.style.borderColor = "none";
+        });
       });
-      // ???
+      //   ???
     </script>
   </body>
 </html>
