@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 5</title>
+    <style>
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 5</title>
-        <style>
-            td { border: 1px solid; }
-        </style>
-    </head>
+  <body>
+    <table>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <button>Calculate new column</button>
+    <script>
+      const firstArray = [];
+      //   const tdFirst = document.querySelector("td");
+      //   const tdSecond = document.querySelector("td").nextSibling;
+      //   console.log(tdFirst);
+      //   console.log(tdSecond);
+      const topTd = document.querySelectorAll("td");
+      const button = document.querySelector("button");
+      topTd.forEach((el) => firstArray.push(el.outerText));
+      //   console.log(topTd[0].outerText);
+      console.log(firstArray);
 
-    <body>
-        <table>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-        </table>
-        <button>Calculate new column</button>
-        <script>
-            // ???
-        </script>
-    </body>
+      const arrayOfNumbers = firstArray.map((el) => Number(el));
+      console.log(arrayOfNumbers);
 
+      button.addEventListener("click", () => {
+        const valueThree = firstArray[0] + firstArray[1];
+        const valueFour = firstArray[2] + firstArray[3];
+        // const newArray =
+        console.log(
+          `| ${arrayOfNumbers[0]} | ${arrayOfNumbers[1]} | ${
+            arrayOfNumbers[0] + arrayOfNumbers[1]
+          } | ${arrayOfNumbers[0] + arrayOfNumbers[1] + arrayOfNumbers[3]}`
+        );
+      });
+
+      // ???
+    </script>
+  </body>
 </html>

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 7</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 7</title>
-    </head>
+  <body>
+    <p>Input radius value and get the volume of a sphere.</p>
+    <form action="https://ddg.gg/" method="post" id="MyForm">
+      <label for="radius">Radius</label>
+      <input type="text" name="radius" id="radius" required />
+      <button>Calculate volume</button>
+    </form>
 
-    <body>
-        <p>Input radius value and get the volume of a sphere.</p>
-        <form action="https://ddg.gg/" method="post" id="MyForm">
-            <label for="radius">Radius</label>
-            <input type="text" name="radius" id="radius" required>
-            <button>Calculate volume</button>
-        </form>
-
-        <script>
-            // ???
-        </script>
-    </body>
-
+    <script>
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+      let V = 0;
+      button.addEventListener("click", () => {
+        V = ((4 / 3) * 3.14 * input.value ** 3).toFixed(2);
+        alert(V);
+      });
+      // ???
+    </script>
+  </body>
 </html>
