@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 2</title>
-    </head>
+  <body>
+    <p>
+      <a
+        class="w3r"
+        type="text/html"
+        hreflang="en-us"
+        rel="nofollow"
+        target="_self"
+        href="https://www.google.com/"
+      >
+        Google.com
+      </a>
+      <a href="#" data-description="Ignore this one!" target="_blank"></a>
+    </p>
 
-    <body>
-        <p>
-            <a
-                class="w3r"
-                type="text/html"
-                hreflang="en-us"
-                rel="nofollow"
-                target="_self"
-                href="https://www.google.com/"
-            >
-                Google.com
-            </a>
-            <a href="#" data-description="Ignore this one!" target="_blank"></a>
-        </p>
+    <button>Click here to get attributes</button>
 
-        <button>Click here to get attributes</button>
-
-        <script>
-            // ???
-        </script>
-    </body>
-
+    <script>
+      const aToLog = document.querySelector(".w3r");
+      console.log(
+        aToLog.href,
+        aToLog.hreflang,
+        aToLog.rel,
+        aToLog.target,
+        aToLog.type
+      );
+      // ???
+    </script>
+  </body>
 </html>
