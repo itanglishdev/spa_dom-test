@@ -14,7 +14,7 @@
       const p = document.querySelector("#text");
       const button = document.querySelector("#styler");
 
-      button.eventListener("click", () => {
+      button.addEventListener("click", function () {
         p.style.color = "red";
         p.style.fontFamily = "Arial";
         p.style.fontSize = "Large";
