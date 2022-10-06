@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 3</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Task 3</title>
-    </head>
+  <body>
+    <div>
+      <input type="text" value="First input" />
+    </div>
+    <div>
+      <input type="text" value="Second input" />
+    </div>
 
-    <body>
-        <div>
-            <input type="text" value="First input">
-        </div>
-        <div>
-            <input type="text" value="Second input">
-        </div>
+    <script>
+      const firstInput = document.querySelector('input =[value="First input"]');
+      const secondInput = document.querySelector(
+        'input = [value="Second input"]'
+      );
 
-        <script>
-            // ???
-        </script>
-    </body>
+      firstInput.addEventListener("focus", () => {
+        firstInput.style.borderColor = "red";
+      });
 
+      secondInput.addEventListener("focus", () => {
+        secondInput.style.borderColor = "red";
+      });
+      // ???
+    </script>
+  </body>
 </html>
